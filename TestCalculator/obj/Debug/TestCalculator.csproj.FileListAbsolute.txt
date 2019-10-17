@@ -1,0 +1,10 @@
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\bin\Debug\TestCalculator.exe.config
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\bin\Debug\TestCalculator.exe
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\bin\Debug\TestCalculator.pdb
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.csprojAssemblyReference.cache
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.Form1.resources
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.Properties.Resources.resources
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.csproj.GenerateResource.cache
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.exe
+C:\Users\Sadie\source\repos\TestCalculator\TestCalculator\obj\Debug\TestCalculator.pdb
