@@ -1,21 +1,21 @@
-module Calculate
-    implicit none
+module Calculate !Holds subroutines for addition, subtraction, multiplication, and division.
+    implicit none !This means we have to specify types
 contains
-    subroutine addition(first, second, progressCallBack)
+    subroutine addition(first, second, progressCallBack) !takes in two integers and uses progressCallBack to return answer
+    !These three lines are are case sensitive. What is filled out here must match exactly to the call being made in C#
         !DEC$ ATTRIBUTES DLLEXPORT :: addition
         !DEC$ ATTRIBUTES ALIAS: 'addition' :: addition
         !DEC$ ATTRIBUTES REFERENCE :: first, second, progressCallBack
     
         external progressCallBack
-        integer, intent(in) :: first
-        integer, intent(inout) :: second
-        integer :: i
-        i = second
-        second = i + first
+        integer, intent(in) :: first !think of callin intent(in) as integer first = first
+        integer, intent(inout) :: second !inout means it is passing in second and will be used to send out second also.
+        second = second + first
         call progressCallBack(second)
         return
     end subroutine
     
+    !The following subroutines follow the comments from above.
     subroutine multiplication(first,second, progressCallBack)
         !DEC$ ATTRIBUTES DLLEXPORT :: multiplication
         !DEC$ ATTRIBUTES ALIAS: 'multiplication' :: multiplication
@@ -24,9 +24,7 @@ contains
         external progressCallBack
         integer, intent(in) :: first
         integer, intent(inout) :: second
-        integer :: i
-        i = second
-        second = i * first
+        second = second * first
         call progressCallBack(second)
         return
     end subroutine
@@ -39,9 +37,7 @@ contains
         external progressCallBack
         integer, intent(in) :: first
         integer, intent(inout) :: second
-        integer :: i
-        i = second
-        second = first - i
+        second = first - second
         call progressCallBack(second)
         return
     end subroutine
@@ -54,9 +50,7 @@ contains
         external progressCallBack
         integer, intent(in) :: first
         integer, intent(inout) :: second
-        integer :: i
-        i = second
-        second = first / i
+        second = first / second
         call progressCallBack(second)
         return
     end subroutine
